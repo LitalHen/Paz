@@ -3,6 +3,9 @@ main{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
 
@@ -10,20 +13,22 @@ header{
     height: 105px;
     position: relative;
     display: flex;
-    justify-content:center;
-    flex-direction: row-reverse;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin:auto;
+    margin-bottom: 30px;
 
 }
 
 nav{
-    align-self: flex-end;
+    align-self: center;
+   
 }
 
 .logo{
     position: absolute;
-    margin-left: 61%;
-    margin-top: 4%;
+    margin-right: -9%;
+    margin-top: -3%;
 }
 
 .logo>img{
@@ -34,7 +39,8 @@ nav{
 .search{
     direction: ltr;
     justify-self: flex-end;
-    padding-bottom: 20px;    
+    padding-bottom: 30px; 
+    padding-left: 290px;
 }
 
 .search > a{
@@ -44,6 +50,7 @@ color: white;
 nav > ul{
     display: flex;
     list-style: none;
+    
   
 }
 
@@ -51,6 +58,7 @@ nav > ul{
     text-align: center;  
     padding: 0px;
     margin: 0px;  
+
 }
 
 nav > .nav_menu{
@@ -62,18 +70,20 @@ nav > .nav_menu{
 
 }
 
-nav > ul > li:first-child{
+nav > ul > li:first-child , .footer > ul> li:first-child{
     border-right: none;
 }
 
-nav > ul > li{
+nav > ul > li, .footer >ul >li{
 padding:0px 10px 0px 10px;
-border-right: 2px solid silver;
+border-right: 1px solid rgb(243,243,243);
 }
 
-nav > ul > li> a{
+nav > ul > li> a , .footer >ul >li >a{
     color:white;
     font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
     }
 
 nav > .nav_menu > li:hover > .drop_down{
@@ -87,3 +97,60 @@ nav > .nav_menu > li:hover > .drop_down{
     display: none;
 }
 
+
+.main_text_cube, .main_add_cube{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    width: 900px;
+}
+
+.text_cubes, .add_cubes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.map_container{
+    display: flex;
+}
+
+.flex_cube{
+    width:33.3%;
+    position: relative;
+}
+
+.station_map{
+    width: 50%;
+}
+
+.add_cubes > .flex_cube > .change_img:nth-child(n+2){
+    display: none;
+}
+
+.cube_content{
+    position: absolute;
+    background-color: rgb(122, 123, 125);
+        margin-top: -27%;
+        width:291px;
+        color: #fff;
+        height: 77px;
+        font-size: 13px;
+    }
+
+.cube_content >p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.footer{
+    background-color:rgb(144, 144, 144);
+    height: 37px;
+}
+
+.footer > ul{
+    display: flex;
+    width: 900px;
+    list-style: none;
+    padding-top: 15px;
+    height: fit-content;
+}
