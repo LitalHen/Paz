@@ -94,18 +94,32 @@ nav > ul > li:first-child , .footer_nav > ul> li:first-child{
     border-right: none;
 }
 
-nav > ul > li, .footer_nav >ul >li{
+nav > ul > li{
 padding:0px 10px 0px 10px;
-border-right: 1px solid rgb(243,243,243);
+background: url(menu_sep.png) no-repeat 0 0px;
+
+
+}
+.footer_nav >ul >li{
+
+    padding:0px 8px 0px 5px;
+    border-right: 2px solid  rgb(243,243,243);
 
 }
 
-nav > ul> li> a , .drop_down >ul >li >a,  .footer_nav >ul >li >a{
+nav > ul> li> a , .drop_down >ul >li >a{
     color:white;
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     }
+
+.footer_nav >ul >li >a{
+
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+}
 
 nav > .nav_menu > li:hover > .drop_down{
   display: block;
@@ -194,7 +208,7 @@ nav> .nav_menu > li > .drop_down{
 
     .cube_content >h3, p {
         margin-top:0px;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
 
 
@@ -228,18 +242,22 @@ nav> .nav_menu > li > .drop_down{
     position: sticky;
     bottom: 0px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     background: linear-gradient(0deg,rgba(144,144,144,1) 95%, rgba(168,168,168,1) 5%);
 
 }
 
 .footer_nav > ul{
-    margin: 0px;
+    margin: 2px;
     display: flex;
     list-style: none;
-    padding-top: 5px;
-    height: fit-content;
+    padding-top: 14px;
+    padding-bottom: 3px;
+}
+
+.footer_nav > ul >li{
+    line-height: 17px;
+    height: 17px;
 }
 .flex_cube> ul> li> a:hover, .flex_cube>.change_img> ul>li>a:hover, .footer_nav>ul>li>a:hover{
 
@@ -279,3 +297,14 @@ nav> .nav_menu > li > .drop_down{
     color:gray;
     
 }
+
+.form_container{
+    width:900px;
+    display: flex;
+    width:650px;
+}
+
+.contact_form{
+    height: 100%;
+}
+
