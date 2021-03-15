@@ -1,4 +1,4 @@
-main{
+body{
     direction: rtl;
     width: 100vw;
     height: 100vh;
@@ -24,7 +24,6 @@ header{
 nav{
     align-self: center;
     padding: 5px;
-   
 }
 
 .logo{
@@ -135,15 +134,14 @@ nav> .nav_menu > li > .drop_down{
 .drop_down > ul > li:last-child{
     border-bottom:none;
 }
+
 .main_text_cube{
-    justify-content: center;
     margin:auto;
     width: 900px;
     margin-bottom: 19px;
 }
 
 .main_ads_cube{
-    justify-content: center;
     margin:auto;
     width: 900px;
     padding-bottom: 30px;
@@ -165,7 +163,7 @@ nav> .nav_menu > li > .drop_down{
 }
 
 .flex_cube{
-    width:33.3%;
+    width:32%;
     position: relative;
 }
 
@@ -175,9 +173,6 @@ nav> .nav_menu > li > .drop_down{
     display: none;
 }
 
-h3{
-    margin:3px;
-}
 
 .flex_cube> img{
     border-radius: 0px 0px 20px 0px;
@@ -186,24 +181,25 @@ h3{
 .cube_content{
     position: absolute;
     background-color: rgb(122, 123, 125);
-    width:228px;
+    width:235px;
     height: 80px;
     color: #fff;
     font-size: 12px;
-    padding:5px;
-    right:5px;
-    bottom:2%;
+    padding:10px;
+    right:6px;
+    bottom:10px;
     border-radius: 0px 0px 20px 0px;  
     opacity: 0.9;      
     }
 
-    .cube_content > p {
+    .cube_content >h3, p {
         margin-top:0px;
+        margin-bottom: 5px;
     }
+
 
 .cube_content >a{
     float: left;
-    margin-top: -5px;
     color: white;
     }
 
@@ -256,8 +252,13 @@ h3{
     flex-direction: column;
     height: 216px;
     font-size: 15px;
-    margin:10px 0px 15px 0px;
-    padding: 0px 25px 0px 25px;
+    margin:10px 0px 16px 0px;
+   
+}
+
+.flex_cube div{
+
+    padding: 0px 15px 0px 25px;
 }
 
 .ads_cubes > .flex_cube h4{
@@ -270,10 +271,11 @@ h3{
 }
 .ads_link{
     align-self: flex-end;
-    padding:15px 0px 10px 5px;
+    margin-top:10px;
 }
 
 .ads_link a , .station_map>ul a {
     font-size:12px;
     color:gray;
+    
 }
