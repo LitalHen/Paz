@@ -267,9 +267,6 @@ h3{
     color:gray;
     margin: 8px 0px 15px 0px;
     padding-bottom: 7px;
-
-   
-
 }
 .ads_link{
     align-self: flex-end;
@@ -279,5 +276,4 @@ h3{
 .ads_link a , .station_map>ul a {
     font-size:12px;
     color:gray;
-  
 }
