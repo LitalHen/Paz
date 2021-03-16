@@ -65,9 +65,9 @@ cursor: pointer;
 text-decoration: none;
 }
 
-.search > a:hover, .search > img:hover{
+.search > a:hover, .search > img:hover, .nav_menu > li> a:hover{
 
-    color:blue;
+    color:#005ca0;
     text-decoration:underline;
 }
 
@@ -95,18 +95,16 @@ nav > ul > li:first-child , .footer_nav > ul> li:first-child{
     border-right: none;
 }
 
+nav > ul > li:first-child:hover , .footer_nav > ul> li:first-child:hover{
+    cursor: pointer;
+}
 nav > ul > li{
 padding:0px 10px 0px 10px;
 background: url(menu_sep.png) no-repeat 0 0px;
 
 
 }
-.footer_nav >ul >li{
 
-    padding:0px 8px 0px 5px;
-    border-right: 2px solid  rgb(243,243,243);
-
-}
 
 nav > ul> li> a , .drop_down >ul >li >a{
     color:white;
@@ -155,7 +153,7 @@ nav> .nav_menu > li > .drop_down{
 .main_text_cube{
     margin:auto;
     width: 900px;
-    margin-bottom: 19px;
+    margin-bottom: 10px;
 }
 
 .main_ads_cube{
@@ -220,9 +218,9 @@ nav> .nav_menu > li > .drop_down{
     color: white;
     }
 
-.cube_content > a:hover{
+.cube_content > a:hover, .ads_link a:hover  {
 
-    color: blue;
+    color: #005ca0;
 }
 
 .ads_cubes> .flex_cube{
@@ -246,7 +244,8 @@ nav> .nav_menu > li > .drop_down{
     bottom: 0px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(0deg,rgba(144,144,144,1) 95%, rgba(168,168,168,1) 5%);
+    background: rgb(144,144,144);
+    background: linear-gradient(0deg, rgba(144,144,144,0.9778207500329178) 79%, rgba(168,168,168,0.6772589522801089) 98%);
 
 }
 
@@ -254,21 +253,24 @@ nav> .nav_menu > li > .drop_down{
     margin: 2px;
     display: flex;
     list-style: none;
-    padding-top: 14px;
+    padding-top: 13px;
     padding-bottom: 3px;
 }
 
-.footer_nav > ul >li{
-    line-height: 17px;
-    height: 17px;
-}
-.flex_cube> ul> li> a:hover, .flex_cube>.change_img> ul>li>a:hover, .footer_nav>ul>li>a:hover{
+.footer_nav >ul >li{
+    padding:0px 8px 0px 5px;
+    border-right: 2px solid  rgb(243,243,243);
 
-    color:blue;
+}
+.flex_cube> ul> li> a:hover, .flex_cube>.change_img> ul>li>a:hover, .footer_nav>ul>li>a:hover, .flex_cube >.map_container>.station_map>ul>li >a:hover{
+
+    color:#005ca0;
     text-decoration:underline;
 }
 
 .ads_cubes > .flex_cube{
+    background: rgb(238,238,238);
+    background: linear-gradient(0deg, rgba(238,238,238,0.9244499635160639) 43%, rgba(251,251,251,0.9918656938531426) 74%);
     display: flex;
     flex-direction: column;
     height: 216px;
@@ -287,7 +289,7 @@ nav> .nav_menu > li > .drop_down{
     border-bottom: 1px solid lightgray;
     height: fit-content;
     color:gray;
-    margin: 8px 0px 15px 0px;
+    margin: 5px 0px 15px 0px;
     padding-bottom: 7px;
 }
 .ads_link{
@@ -302,22 +304,32 @@ nav> .nav_menu > li > .drop_down{
 }
 
 main{
-     width:710px;
-     margin:auto;
+     width:890px;
+    margin-right: 10px;
      display: flex;
      flex-direction: column;
      align-items:flex-start;
 
+
      
 }
+
+.main_contact{
+    display: flex;
+    width:900px;
+    margin-right: 230px;
+    
+}
+
 
 .form_container{
     display: flex;
     font-size:12px;
-    justify-content:space-evenly;
+    justify-content:center;
     margin:auto;
-    width:850px;
+    width:900px;
     margin-bottom: 19px;
+    margin-right: 284px;
    
 }
 
@@ -332,18 +344,34 @@ main{
 }
 #contact_form{
     width: 340px;
+    margin-left:50px;
+    
 }
 #contact_form, .contact_info, .more_details{
     border: 1px solid silver;
     border-radius: 0px 20px 0px 0px;
     padding:2px 15px 20px 20px;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
+    color:#6d6d6d ;
+    background: rgb(238,238,238);
+    background: linear-gradient(0deg, rgba(238,238,238,0.9244499635160639) 43%, rgba(251,251,251,0.9918656938531426) 74%);  
    
 }
+
 
 .contact_info, .more_details{
     width:250px;
     height:150px;
+    margin-right:20px
+}
+    .form_input label{
+    width: 73px;
+    display: inline-block;
+ 
+}
+
+.info_container{
+    margin-top: -21px;
 }
 
 .contact_info h3, .more_details h3, .contact_title h4{
@@ -351,12 +379,17 @@ main{
     padding-bottom: 5px;
 }
 
+.font_bold{
+   font-weight: bold;
+}
+
 .form_container h3{
     color: #005ca0;
 }
-.more_details > div> a {
+.more_details a {
 
     text-decoration: none;
+    color: blue;
 }
 
 .more_details > div> a:hover{
@@ -364,7 +397,7 @@ main{
 text-decoration: underline;
 }
 .form_input div{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .form_input{
 
@@ -400,9 +433,4 @@ text-decoration: underline;
 
 .form_submited input:invalid ~ .error{
     display: block;
-}
-
-
-.contact.title h4{
-    width: ;
 }
