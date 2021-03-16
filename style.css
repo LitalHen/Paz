@@ -273,7 +273,7 @@ footer{
     display: flex;
     list-style: none;
     padding-top: 13px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 
 .footer_nav >ul >li{
@@ -322,6 +322,7 @@ main{
 #contact_form{
     width: 340px;
     margin-left:50px;
+    margin-top:-10px;
 }
 
 .font_bold{
