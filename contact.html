@@ -99,45 +99,57 @@
        </nav>
 
  </header>
-        <a href="#">עמוד הבית</a> > צור קשר
-        <div>
-            <h3>צור קשר</h3>
+
+    <main>
+        <div class="link_to_main">
+        <a href="http://127.0.0.1:5501/index.html#">עמוד הבית</a> > צור קשר
+    </div>
+        <div class="contact_title">
+            <h4>צור קשר</h4>
         </div>
+
+    </main>
+    
         <div class="form_container">
             
         <form id="contact_form">
             <div>
-                <h4>צור קשר</h4>
+                <h3>צור קשר</h3>
                 <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</p>
                 <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
             </div>
-
+            <div class="form_input">
             <div>
                  <label for="first_name">*שם פרטי</label>
-                 <input type="text" id="first_name">
+                 <input type="text" id="first_name" required>
+                 <span class="error">שדה חובה</span>
              </div>
              <div>
                  <label for="last_name">*שם משפחה</label>
-                 <input type="text" id="last_name">
+                 <input type="text" id="last_name" required>
+                 <span class="error">שדה חובה</span>
              </div>
              <div>
                  <label for="phone">*טלפון</label>
-                 <input type="text" id="phone">
+                 <input type="text" id="phone" required>
+                 <span class="error">שדה חובה</span>
               </div>
              <div>
                  <label for="email">E-mail</label>
                  <input type="email" id="email">
+                 
               </div>
              <div>
-                <label for="free_text"></label>
-                <textarea name="free_text" id="free_text" cols="30" rows="10"></textarea>
+                <textarea name="free_text" id="free_text" cols="33" rows="10"></textarea>
              </div>
-             <button type="button" id="btn_submit">שלח</button>
+             <button type="button" id="btn_submit" onclick="submitForm()">שלח</button>
+            </div>
+             
         </form>
         <div class="info_container">
         <section class="contact_info">
             <div>
-                <h4>פרטי יצירת קשר</h4>
+                <h3>פרטי יצירת קשר</h3>
             </div>
             <div>
                 <p>פז חברת נפט בע"מ</p>
@@ -150,7 +162,7 @@
         
         <section class="more_details">
             <div>
-                <h4>עוד בפז</h4>
+                <h3>עוד בפז</h3>
             </div>
             <div>
                 <p>ליצירת קשר עם דוברות פז</p>
@@ -161,5 +173,25 @@
         </section>
     </div>
     </div>
-    </body>
+
+    <footer class="footer">
+        <div class="footer_nav">
+        <ul>
+            <li> <a href="#"><img src="fb_icon.png" alt="facebbok"></a></li>
+            <li> <a href="#">עמוד הבית</a></li>
+            <li> <a href="#">מחירונים</a></li>
+            <li> <a href="#">קריירה</a></li>
+            <li> <a href="#">תנאי שימוש</a></li>
+            <li> <a href="#">נגישות</a></li>
+            <li> <a href="#">מפת האתר</a></li>
+            <li> <a href="#">צור קשר</a></li>
+            <li> <a href="#">שטחי מסחר</a></li>
+            <li> <a href="#">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+
+        </ul>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

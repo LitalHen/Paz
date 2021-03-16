@@ -9,8 +9,8 @@ body{
 }
 header{
 
-    background: rgb(168,168,168);
-    background: linear-gradient(0deg, rgba(168,168,168,1) 5%, rgba(144,144,144,1) 21%);
+    background: rgb(144,144,144);
+    background: linear-gradient(180deg, rgba(144,144,144,0.9778207500329178) 71%, rgba(168,168,168,0.7615286152014572) 97%);
     height: 105px;
     position: relative;
     display: flex;
@@ -24,6 +24,7 @@ header{
 nav{
     align-self: center;
     padding: 5px;
+    display: block;
 }
 
 .logo{
@@ -123,7 +124,8 @@ nav > ul> li> a , .drop_down >ul >li >a{
 
 nav > .nav_menu > li:hover > .drop_down{
   display: block;
-  background: linear-gradient(0deg,rgba(144,144,144,1) 95%, rgba(168,168,168,1) 5%);
+  background: rgb(144,144,144);
+  background: linear-gradient(0deg, rgba(144,144,144,0.9778207500329178) 71%, rgba(168,168,168,0.6772589522801089) 96%);
 }
 
 nav> .nav_menu > li > .drop_down{
@@ -133,6 +135,7 @@ nav> .nav_menu > li > .drop_down{
     display: none;
     text-align:right;
     padding-top: 5px;
+    margin-top: 10px;
 }
 
 .drop_down > ul{
@@ -177,7 +180,7 @@ nav> .nav_menu > li > .drop_down{
 }
 
 .flex_cube{
-    width:32%;
+    width:33.3%;
     position: relative;
 }
 
@@ -270,7 +273,7 @@ nav> .nav_menu > li > .drop_down{
     flex-direction: column;
     height: 216px;
     font-size: 15px;
-    margin:10px 0px 16px 0px;
+    margin:10px 0px 16px 10px;
    
 }
 
@@ -298,13 +301,108 @@ nav> .nav_menu > li > .drop_down{
     
 }
 
+main{
+     width:710px;
+     margin:auto;
+     display: flex;
+     flex-direction: column;
+     align-items:flex-start;
+
+     
+}
+
 .form_container{
-    width:900px;
     display: flex;
-    width:650px;
+    font-size:12px;
+    justify-content:space-evenly;
+    margin:auto;
+    width:850px;
+    margin-bottom: 19px;
+   
 }
 
-.contact_form{
-    height: 100%;
+.link_to_main{
+    font-size: 12px;
 }
 
+.contact_title{
+    width: 412px;
+    color: gray;
+ 
+}
+#contact_form{
+    width: 340px;
+}
+#contact_form, .contact_info, .more_details{
+    border: 1px solid silver;
+    border-radius: 0px 20px 0px 0px;
+    padding:2px 15px 20px 20px;
+    margin-bottom: 39px;
+   
+}
+
+.contact_info, .more_details{
+    width:250px;
+    height:150px;
+}
+
+.contact_info h3, .more_details h3, .contact_title h4{
+    border-bottom: 1px solid silver;
+    padding-bottom: 5px;
+}
+
+.form_container h3{
+    color: #005ca0;
+}
+.more_details > div> a {
+
+    text-decoration: none;
+}
+
+.more_details > div> a:hover{
+
+text-decoration: underline;
+}
+.form_input div{
+    margin-bottom: 10px;
+}
+.form_input{
+
+    margin:10px 50px 0px 0px;
+    
+}
+
+
+.form_input label{
+    width: 73px;
+    display: inline-block;
+}
+
+#btn_submit{
+  float: left;
+  margin-left: 35px;
+  font-size:14px;
+  border-style: none;
+  color: white;
+  border-radius: 0px 5px 0px 0px;
+  background: rgb(0,92,160);
+  background: linear-gradient(0deg, rgba(0,92,160,0.969393783740783) 44%, rgba(4,146,211,0.8233263680104459) 96%);;
+}
+
+.error{
+    display: none;
+}
+.form_submited .error{
+    display: none;
+    color: red;
+   
+}
+
+.form_submited input:invalid ~ .error{
+    display: block;
+}
+
+
+.contact.title h4{
+    width: ;
+}
