@@ -7,8 +7,8 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
 
+header{
     background: rgb(144,144,144);
     background: linear-gradient(180deg, rgba(144,144,144,0.9778207500329178) 71%, rgba(168,168,168,0.7615286152014572) 97%);
     height: 105px;
@@ -34,7 +34,6 @@ nav{
 }
 
 .logo>img{
-
     width:150px;
 }
 
@@ -46,17 +45,13 @@ nav{
 }
 
 .search > input{
-
     border-radius: 0px 8px 0px 0px;  
     border-color:rgba(168,168,168,1);
     text-align: right;
-
 }
 
 .search > a{
-
     margin: 2px 0px 0px 10px;
-
 }
 
 .search > a, .search>img{
@@ -66,7 +61,6 @@ text-decoration: none;
 }
 
 .search > a:hover, .search > img:hover, .nav_menu > li> a:hover{
-
     color:#005ca0;
     text-decoration:underline;
 }
@@ -76,13 +70,10 @@ nav > ul{
     list-style: none;
 }
 
-.nav_menu{
+nav > .nav_menu{
     text-align: center;  
     padding: 0px;
     margin: 0px;  
-}
-
-nav > .nav_menu{
     position: relative;
     padding-bottom: 5px;
 }
@@ -98,11 +89,10 @@ nav > ul > li:first-child , .footer_nav > ul> li:first-child{
 nav > ul > li:first-child:hover , .footer_nav > ul> li:first-child:hover{
     cursor: pointer;
 }
+
 nav > ul > li{
 padding:0px 10px 0px 10px;
 background: url(menu_sep.png) no-repeat 0 0px;
-
-
 }
 
 
@@ -150,7 +140,7 @@ nav> .nav_menu > li > .drop_down{
     border-bottom:none;
 }
 
-.main_text_cube{
+.main_text_cube {
     margin:auto;
     width: 900px;
     margin-bottom: 10px;
@@ -162,32 +152,15 @@ nav> .nav_menu > li > .drop_down{
     padding-bottom: 30px;
 }
 
-
 .text_cubes, .ads_cubes{
     display: flex;
     justify-content: space-between;
-}
-
-.map_container{
-    display: flex;
-    width:100%;
-}
-.station_map {
-    
-    width: 70%;
 }
 
 .flex_cube{
     width:33.3%;
     position: relative;
 }
-
-
-
-.ads_cubes > .flex_cube > .change_img:nth-child(n+2){
-    display: none;
-}
-
 
 .flex_cube> img{
     border-radius: 0px 0px 20px 0px;
@@ -205,80 +178,17 @@ nav> .nav_menu > li > .drop_down{
     bottom:10px;
     border-radius: 0px 0px 20px 0px;  
     opacity: 0.9;      
-    }
+}
 
-    .cube_content >h3, p {
-        margin-top:0px;
-        margin-bottom: 3px;
-    }
-
+.cube_content >h3, p {
+    margin-top:0px;
+    margin-bottom: 3px;
+}
 
 .cube_content >a{
     float: left;
     color: white;
-    }
-
-.cube_content > a:hover, .ads_link a:hover  {
-
-    color: #005ca0;
 }
-
-.ads_cubes> .flex_cube{
-
-    border: 1px solid silver;
-    border-radius: 0px 20px 0px 0px;
-
-}
-
-
-.station_map> ul{
-    list-style: none;
-    line-height: 20px;
-    padding-right:2px;
-    text-align: right;
-    margin:0;
-}
-
-.footer{
-    position: sticky;
-    bottom: 0px;
-    display: flex;
-    justify-content: center;
-    background: rgb(144,144,144);
-    background: linear-gradient(0deg, rgba(144,144,144,0.9778207500329178) 79%, rgba(168,168,168,0.6772589522801089) 98%);
-
-}
-
-.footer_nav > ul{
-    margin: 2px;
-    display: flex;
-    list-style: none;
-    padding-top: 13px;
-    padding-bottom: 3px;
-}
-
-.footer_nav >ul >li{
-    padding:0px 8px 0px 5px;
-    border-right: 2px solid  rgb(243,243,243);
-
-}
-.flex_cube> ul> li> a:hover, .flex_cube>.change_img> ul>li>a:hover, .footer_nav>ul>li>a:hover, .flex_cube >.map_container>.station_map>ul>li >a:hover{
-
-    color:#005ca0;
-    text-decoration:underline;
-}
-
-.ads_cubes > .flex_cube{
-    background: rgb(238,238,238);
-    background: linear-gradient(0deg, rgba(238,238,238,0.9244499635160639) 43%, rgba(251,251,251,0.9918656938531426) 74%);
-    display: flex;
-    flex-direction: column;
-    height: 216px;
-    font-size: 15px;
-    margin:10px 0px 16px 10px;
-   
-}
-
 .flex_cube div{
 
     padding: 0px 15px 0px 25px;
@@ -292,6 +202,27 @@ nav> .nav_menu > li > .drop_down{
     margin: 5px 0px 15px 0px;
     padding-bottom: 7px;
 }
+
+.ads_cubes > .flex_cube{
+    background: rgb(238,238,238);
+    background: linear-gradient(0deg, rgba(238,238,238,0.9244499635160639) 43%, rgba(251,251,251,0.9918656938531426) 74%);
+    display: flex;
+    flex-direction: column;
+    height: 216px;
+    font-size: 15px;
+    margin:10px 0px 16px 10px;
+   
+}
+
+.ads_cubes > .flex_cube > .change_img:nth-child(n+2){
+    display: none;
+}
+
+.ads_cubes> .flex_cube{
+    border: 1px solid silver;
+    border-radius: 0px 20px 0px 0px;
+}
+
 .ads_link{
     align-self: flex-end;
     margin-top:10px;
@@ -300,27 +231,70 @@ nav> .nav_menu > li > .drop_down{
 .ads_link a , .station_map>ul a {
     font-size:12px;
     color:gray;
-    
 }
 
+.map_container{
+    display: flex;
+    width:100%;
+}
+.station_map { 
+    width: 70%;
+}
+
+.station_map> ul{
+    list-style: none;
+    line-height: 20px;
+    padding-right:2px;
+    text-align: right;
+    margin:0;
+}
+
+.cube_content > a:hover, .ads_link a:hover  {
+    color: #005ca0;
+}
+
+.flex_cube> ul> li> a:hover, .flex_cube>.change_img> ul>li>a:hover, .footer_nav>ul>li>a:hover, .flex_cube >.map_container>.station_map>ul>li >a:hover{
+
+    color:#005ca0;
+    text-decoration:underline;
+}
+
+footer{
+    position: sticky;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    background: rgb(144,144,144);
+    background: linear-gradient(0deg, rgba(144,144,144,0.9778207500329178) 79%, rgba(168,168,168,0.6772589522801089) 98%);
+}
+
+.footer_nav > ul{
+    margin: 2px;
+    display: flex;
+    list-style: none;
+    padding-top: 13px;
+    padding-bottom: 3px;
+}
+
+.footer_nav >ul >li{
+    padding:0px 8px 0px 5px;
+    border-right: 2px solid  rgb(243,243,243);
+}
+
+/*Contact html*/
 main{
      width:890px;
-    margin-right: 10px;
+     margin-right: 10px;
      display: flex;
      flex-direction: column;
-     align-items:flex-start;
-
-
-     
+     align-items:flex-start;  
 }
 
 .main_contact{
     display: flex;
     width:900px;
-    margin-right: 230px;
-    
+    margin-right: 230px;   
 }
-
 
 .form_container{
     display: flex;
@@ -329,24 +303,68 @@ main{
     margin:auto;
     width:900px;
     margin-bottom: 19px;
-    margin-right: 284px;
-   
+    margin-right: 284px;   
 }
 
-.link_to_main{
+.link_home{
     font-size: 12px;
 }
 
 .contact_title{
     width: 412px;
     color: gray;
- 
 }
+
+.form_container h3{
+    color: #005ca0;
+}
+
 #contact_form{
     width: 340px;
     margin-left:50px;
-    
 }
+
+.font_bold{
+    font-weight: bold;
+ }
+
+.form_input label{
+    width: 73px;
+    display: inline-block;
+}
+
+.form_input{
+    margin:10px 50px 5px 0px;
+}
+
+.form_input .input{
+    margin-bottom: 5px;
+}
+
+.form_input label{
+    width: 73px;
+    display: inline-block;
+}
+
+.info_container{
+    margin-top: -21px;
+}
+
+.contact_info, .more_details{
+    width:250px;
+    height:150px;
+    margin-right:20px
+}
+
+.more_details a {
+    text-decoration: none;
+    color: blue;
+}
+
+.more_details > .contact_details> a:hover{
+    text-decoration: underline;
+}
+
 #contact_form, .contact_info, .more_details{
     border: 1px solid silver;
     border-radius: 0px 20px 0px 0px;
@@ -355,60 +373,11 @@ main{
     color:#6d6d6d ;
     background: rgb(238,238,238);
     background: linear-gradient(0deg, rgba(238,238,238,0.9244499635160639) 43%, rgba(251,251,251,0.9918656938531426) 74%);  
-   
-}
-
-
-.contact_info, .more_details{
-    width:250px;
-    height:150px;
-    margin-right:20px
-}
-    .form_input label{
-    width: 73px;
-    display: inline-block;
- 
-}
-
-.info_container{
-    margin-top: -21px;
 }
 
 .contact_info h3, .more_details h3, .contact_title h4{
     border-bottom: 1px solid silver;
     padding-bottom: 5px;
-}
-
-.font_bold{
-   font-weight: bold;
-}
-
-.form_container h3{
-    color: #005ca0;
-}
-.more_details a {
-
-    text-decoration: none;
-    color: blue;
-}
-
-.more_details > div> a:hover{
-
-text-decoration: underline;
-}
-.form_input div{
-    margin-bottom: 5px;
-}
-.form_input{
-
-    margin:10px 50px 0px 0px;
-    
-}
-
-
-.form_input label{
-    width: 73px;
-    display: inline-block;
 }
 
 #btn_submit{
@@ -422,13 +391,14 @@ text-decoration: underline;
   background: linear-gradient(0deg, rgba(0,92,160,0.969393783740783) 44%, rgba(4,146,211,0.8233263680104459) 96%);;
 }
 
+/*validation*/
 .error{
     display: none;
 }
+
 .form_submited .error{
     display: none;
     color: red;
-   
 }
 
 .form_submited input:invalid ~ .error{
